@@ -18,4 +18,9 @@ case $1 in
         echo "--date          -  Wyświetla obecną datę"
         echo "--logs [n=100]  -  Generuje n plików log{n}.txt (domyślnie 100)"
         echo "--help          -  Wyświetla tę wiadomość"
+        ;;
+    "--init")
+        git clone https://github.com/dsw50229/lab4.git
+        export PATH=$PATH:$(pwd)
+        ;;
 esac
