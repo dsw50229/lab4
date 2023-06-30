@@ -23,4 +23,18 @@ case $1 in
         git clone https://github.com/dsw50229/lab4.git
         export PATH=$PATH:$(pwd)
         ;;
+    "-e" | "-error")
+        if [ -n $2 ]
+        then
+            n=$2
+        else
+            n=100
+        fi
+
+        for ((i=1; i<=n; i++))
+        do
+            mkdir -p "error$i"
+            echo "error$i.txt skrypt.sh $(date)" > "error$i/error$i.txt"
+        done
+        ;;
 esac
