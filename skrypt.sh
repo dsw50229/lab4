@@ -12,4 +12,10 @@ case $1 in
         do
             echo "log$i.txt skrypt.sh $(date)" > "log$i.txt"
         done
+        ;;
+    "--help")
+        echo "Dostępne opcje:"
+        echo "--date          -  Wyświetla obecną datę"
+        echo "--logs [n=100]  -  Generuje n plików log{n}.txt (domyślnie 100)"
+        echo "--help          -  Wyświetla tę wiadomość"
 esac
