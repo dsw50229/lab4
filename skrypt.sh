@@ -1,6 +1,6 @@
 case $1 in
-    "--date") date;;
-    "--logs")
+    "-d" | "--date") date;;
+    "-l" | "--logs")
         if [ -n $2 ]
         then
             n=$2
@@ -13,7 +13,7 @@ case $1 in
             echo "log$i.txt skrypt.sh $(date)" > "log$i.txt"
         done
         ;;
-    "--help")
+    "-h" | "--help")
         echo "Dostępne opcje:"
         echo "--date          -  Wyświetla obecną datę"
         echo "--logs [n=100]  -  Generuje n plików log{n}.txt (domyślnie 100)"
