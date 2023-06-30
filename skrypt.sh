@@ -15,7 +15,7 @@ case $1 in
         ;;
     "-h" | "--help")
         echo "Dostępne opcje:"
-        echo "--date          -  Wyświetla obecną datę"
-        echo "--logs [n=100]  -  Generuje n plików log{n}.txt (domyślnie 100)"
-        echo "--help          -  Wyświetla tę wiadomość"
+        echo "-d, --date          -  Wyświetla obecną datę"
+        echo "-l, --logs [n=100]  -  Generuje n plików log{n}.txt (domyślnie 100)"
+        echo "-h, --help          -  Wyświetla tę wiadomość"
 esac
